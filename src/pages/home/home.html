@@ -1,17 +1,78 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<!-- <div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="img/logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div> -->
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content align="center">
+  <h1><b>มีโชคพลาซ่า</b></h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-slides autoplay="3000" loop="true" speed="500">
+              <ion-slide >
+                <img src="img/bg1.jpg">
+              </ion-slide>
+              <ion-slide >
+                <img src="img/bg2.jpg">
+              </ion-slide>
+              <ion-slide >
+                <img src="img/bg3.jpg">
+              </ion-slide>
+            </ion-slides>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button (click)="profilefn()">
+          <ion-icon name="person"></ion-icon><br>
+          <p>ข้อมูลส่วนตัว</p>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="aboutfn()"> 
+          <ion-icon name="ribbon"></ion-icon><br>
+          <p>เกี่ยวกับ</p>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button (click)="mapfn()">
+          <ion-icon name="pin"></ion-icon><br>
+          <p>แผนที่</p>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="galleryfn()">
+          <ion-icon name="images"></ion-icon><br>
+          <p>รูปภาพ</p>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button (click)="rentalfn()">
+          <ion-icon name="pricetag"></ion-icon><br>
+          <p>จองพื้นที่</p>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button (click)="paymentfn()">
+         <ion-icon name="cash"></ion-icon><br>
+         <p>ชำระเงิน</p>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button (click)="loginfn()" class="login">
+        <h1><b>เข้าสู่ระบบ</b></h1>
+      </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
