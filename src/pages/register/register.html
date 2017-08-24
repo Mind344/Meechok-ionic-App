@@ -1,9 +1,3 @@
-<!--
-  Generated template for the RegisterPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
@@ -14,5 +8,40 @@
 
 
 <ion-content padding>
+  <div class="form" align="center">
+    <form action="" method="post">
+      <ion-item align="center">
+        <button ion-button clear style="height:100px;width:100px;" (click)="proPic()">
+        <img src="img/logo.png" width="80" height="80">
+      </button >
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>หมายเลขบัตรประชาชน</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>ชื่อจริง</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>นามสกุล</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>หมายเลขโทรศัพท์</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>E-mail</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>Password</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <p style="color:red;">** กรุณากรอกข้อมูลให้ครบถ้วน **</p>
+      <button ion-button block (click)="confirm()">สมัครสมาชิก</button>
+    </form>
 
+  </div>
 </ion-content>
