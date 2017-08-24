@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ModalController, ViewController } from 'ionic-angular';
+import { RegisterPage } from '../register/register'; 
 
 @IonicPage()
 @Component({
@@ -18,6 +19,12 @@ export class LoginPage {
   dismiss() {
     let data = { 'foo': 'bar' };
     this.viewCtrl.dismiss(data);
+  }
+  register(){
+    this.navCtrl.push(RegisterPage);
+  }
+  login(){
+    
   }
 
 }
